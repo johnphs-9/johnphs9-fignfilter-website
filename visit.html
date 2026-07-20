@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fig &amp; Filter, 8 Chalk Lane (corner of Weaver Street).">
+  <title>Visit | Fig &amp; Filter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Fig &amp; Filter home">Fig &amp; Filter</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span class="menu-toggle-lines" aria-hidden="true"></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="menu.html">Menu</a>
+        <a class="nav-link" href="catering.html">Catering</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="visit.html" aria-current="page">Visit</a>
+        <a class="button button-primary" href="mailto:catering@figandfilter.example">Order catering</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section" aria-labelledby="visit-title">
+      <div class="container visit-grid">
+        <div>
+          <h1 id="visit-title">Address</h1>
+          <p class="lede"><strong>Fig &amp; Filter</strong><br>8 Chalk Lane (corner of Weaver Street)</p>
+          <h2>Opening hours</h2>
+          <table class="hours-table">
+            <thead><tr><th scope="col">Day</th><th scope="col">Hours</th></tr></thead>
+            <tbody>
+              <tr><td>Monday</td><td>Closed</td></tr>
+              <tr><td>Tuesday – Friday</td><td>7:30am – 5:00pm</td></tr>
+              <tr><td>Saturday – Sunday</td><td>8:00am – 5:00pm</td></tr>
+            </tbody>
+          </table>
+          <p>Kitchen closes 3:30pm daily. Public holidays: check our door or email us.</p>
+        </div>
+        <img src="images/storefront.jpg" alt="The Fig &amp; Filter corner shopfront with deep-green window frames and a pavement table">
+      </div>
+    </section>
+
+    <section class="section story-panel">
+      <div class="container visit-details">
+        <article class="info-card">
+          <h2>How to find us</h2>
+          <p>We're the corner shopfront with the deep-green window frames, halfway down Chalk Lane, with the fig tree visible through the side gate. If you can see the takeaway menu lettered on the glass, you're in the right place.</p>
+        </article>
+        <article class="info-card">
+          <h2>Getting here</h2>
+          <ul class="directions-list">
+            <li><strong>On foot or bike:</strong> bike racks are directly outside; the courtyard has space for prams.</li>
+            <li><strong>By train:</strong> eight minutes' walk from Weaver Street station — exit toward the market, then second left.</li>
+            <li><strong>By bus:</strong> routes 14 and 62 stop at the top of Chalk Lane.</li>
+            <li><strong>By car:</strong> street parking on Weaver Street is free for the first hour; there's a paid car park behind the market, four minutes' walk.</li>
+          </ul>
+        </article>
+        <article class="info-card">
+          <h2>Contact</h2>
+          <ul class="contact-list">
+            <li>Email: <a href="mailto:hello@figandfilter.example">hello@figandfilter.example</a></li>
+            <li>Phone: <a href="tel:+15550142286">(555) 014-2286</a></li>
+            <li>Catering enquiries: <a href="mailto:catering@figandfilter.example">catering@figandfilter.example</a></li>
+          </ul>
+        </article>
+        <article class="info-card">
+          <h2>Good to know</h2>
+          <p>The courtyard is dog-friendly; inside is not (sorry — kitchen rules). Big tables can be reserved for groups of six or more by email.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><p class="footer-title">Fig &amp; Filter</p><p class="footer-copy">Roasted here. Baked here. Poured for you.</p></div>
+      <nav class="footer-nav" aria-label="Footer navigation"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="catering.html">Catering</a><a href="about.html">About</a></nav>
+    </div>
+  </footer>
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.site-nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+    });
+  </script>
+</body>
+</html>
