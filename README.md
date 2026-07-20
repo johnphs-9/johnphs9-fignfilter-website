@@ -1,6 +1,22 @@
 # Fig & Filter
 
-A five-page static website for Fig & Filter, a neighbourhood café and roastery. The site follows the visual direction in `DESIGN.md` and the reference screens in `design/`, while using the supplied copy and photographs from `content/`.
+Fig & Filter is a neighbourhood café and roastery built around coffee roasted on site, food made fresh each morning, and a welcoming place to settle in. This website brings that experience online across five thoughtfully designed pages, helping customers explore the menu, arrange catering, meet the founders, and plan their visit.
+
+The five-page static website follows the visual direction in `DESIGN.md` and the reference screens in `design/`, while using the supplied copy and photographs from `content/`.
+
+## Technology overview
+
+Fig & Filter is a dependency-free, client-side website built with standard browser technologies. It does not use a framework, package manager, build process, backend, database, or third-party runtime service. Any conventional static web host can serve the project exactly as it appears in this repository.
+
+| Technology | Use in the project |
+|---|---|
+| HTML5 | Defines the five documents with semantic landmarks, sections, navigation, lists, images, links, and an opening-hours table. Native accessibility features include heading structure, alt text, skip links, ARIA labels, and current-page states. |
+| CSS3 | Provides the shared design system and all presentation through custom properties, responsive media queries, Grid, Flexbox, fluid type and spacing, reduced-motion support, and touch-target sizing. No CSS framework or external font service is used. |
+| Vanilla JavaScript | Supplies the mobile navigation toggle using the browser DOM API, `classList`, and `aria-expanded`. There are no libraries, modules, network requests, or application state. |
+| JPEG assets | Supplies the eight locally hosted photographs in `images/`. Each image uses a lower-case relative path and manifest-defined alternative text. |
+| Markdown | Stores the project documentation, source copy, image manifest, and design specification. Markdown files are authoring references and are not required by the deployed website. |
+
+This architecture keeps deployment simple: the HTML files, `styles.css`, and `images/` directory are the complete runtime application.
 
 ### Home
 ![Screenshot of Fig & Filter website](assets/scr_main.png)
